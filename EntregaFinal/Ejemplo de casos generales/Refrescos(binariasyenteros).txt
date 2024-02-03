@@ -1,0 +1,61 @@
+Problema_Refrescos
+
+Variables:
+x1 "Madrid_hay_Fabrica" 0 None "LpBinary"
+x2 "Madrid_hay_T1" 0 None "LpBinary"
+x3 "Madrid_hay_T2" 0 None "LpBinary"
+x4 "Toledo_hay_Fabrica" 0 None "LpBinary"
+x5 "Toledo_hay_T1" 0 None "LpBinary"
+x6 "Toledo_hay_T2" 0 None "LpBinary"
+x7 "Segovia_hay_Fabrica" 0 None "LpBinary"
+x8 "Segovia_hay_T1" 0 None "LpBinary"
+x9 "Segovia_hay_T2" 0 None "LpBinary"
+x10 "Madrid_a_Madrid" 0 None "LpInteger"
+x11 "Madrid_a_Segovia" 0 None "LpInteger"
+x12 "Madrid_a_Toledo1" 0 None "LpInteger"
+x13 "Madrid_a_Toledo2" 0 None "LpInteger"
+x14 "Madrid_a_Toledo3" 0 None "LpInteger"
+x15 "Toledo_a_Madrid" 0 None "LpInteger"
+x16 "Toledo_a_Segovia" 0 None "LpInteger"
+x17 "Toledo_a_Toledo1" 0 None "LpInteger"
+x18 "Toledo_a_Toledo2" 0 None "LpInteger"
+x19 "Toledo_a_Toledo3" 0 None "LpInteger"
+x20 "Segovia_a_Madrid" 0 None "LpInteger"
+x21 "Segovia_a_Segovia" 0 None "LpInteger"
+x22 "Segovia_a_Toledo1" 0 None "LpInteger"
+x23 "Segovia_a_Toledo2" 0 None "LpInteger"
+x24 "Segovia_a_Toledo3" 0 None "LpInteger"
+
+Objetivo: 
+"LpMinimize" 90000*x1+90000*x4+12000*x7+24000*x2+12000*x5+6000*x8+30000*x3+15000*x6+7500*x9+0*x10+0.09*x11+0.12*x12+0.15*x13+0.18*x14+0.12*x15+0.21*x16+0*x17+0.06*x18+0.09*x19+0.09*x20+0*x21+0.21*x22+0.24*x23+0.27*x24 "Costes_totales"
+
+Restricciones:
+x10+x15+x20>=200000 "DemandaEnMadrid"
+x11+x16+x21>=30000 "DemandaEnSegovia"
+x12+x17+x22>=30000 "DemandaEnToleda1"
+x13+x18+x23>=10000 "DemandaEnToleda2"
+x14+x19+x24>=10000 "DemandaEnToleda3"
+1.2*x10/1000+1.2*x11/1000+1.2*x12/1000+1.2*x13/1000+1.2*x14/1000-150*x2-150*x3<=0 "HorasTotalesEnMadrid"
+2.8*x15/1000+2.8*x16/1000+2.8*x17/1000+2.8*x18/1000+2.8*x19/1000-150*x5-150*x6<=0 "HorasTotalesEnToledo"
+2*x20/1000+2*x21/1000+2*x22/1000+2*x23/1000+2*x24/1000-150*x8-150*x9<=0 "HorasTotalesEnSegovia"
+2*x1-x2-x3>=0 "TurnoFabricaMadrid"
+2*x4-x5-x6>=0 "TurnoFabricaToledo"
+2*x7-x8-x9>=0 "TurnoFabricaSegovia"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

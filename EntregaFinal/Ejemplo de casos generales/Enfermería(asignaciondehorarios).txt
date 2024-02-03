@@ -1,0 +1,32 @@
+Problema_de_asignacion_horarios
+
+Variables:
+x1 "Empleados_que_entran_00:00h" 0 None "LpInteger"
+x2 "Empleados_que_entran_02:00h" 0 None "LpInteger"
+x3 "Empleados_que_entran_04:00h" 0 None "LpInteger"
+x4 "Empleados_que_entran_06:00h" 0 None "LpInteger"
+x5 "Empleados_que_entran_08:00h" 0 None "LpInteger"
+x6 "Empleados_que_entran_10:00h" 0 None "LpInteger"
+x7 "Empleados_que_entran_12:00h" 0 None "LpInteger"
+x8 "Empleados_que_entran_14:00h" 0 None "LpInteger"
+x9 "Empleados_que_entran_16:00h" 0 None "LpInteger"
+x10 "Empleados_que_entran_18:00h" 0 None "LpInteger"
+x11 "Empleados_que_entran_20:00h" 0 None "LpInteger"
+x12 "Empleados_que_entran_22:00h" 0 None "LpInteger"
+
+Objetivo: 
+"LpMinimize" x1+x2+x3+x4+x5+x6+x7+x8+x9+x10+x11+x12 "La_cantidad_de_personal_necesario_durante_el_dia_es_de: "
+
+Restricciones:
+x1+x9+x10+x12>=15 "ElPersonalNecesarioParaElPeriodo1"
+x2+x1+x10+x11>=15 "ElPersonalNecesarioParaElPeriodo2"
+x3+x2+x12+x11>=15 "ElPersonalNecesarioParaElPeriodo3"
+x4+x3+x1+x12>=25 "ElPersonalNecesarioParaElPeriodo4"
+x5+x4+x2+x1>=40 "ElPersonalNecesarioParaElPeriodo5"
+x6+x5+x3+x2>=40 "ElPersonalNecesarioParaElPeriodo6"
+x7+x6+x4+x3>=40 "ElPersonalNecesarioParaElPeriodo7"
+x8+x7+x5+x4>=30 "ElPersonalNecesarioParaElPeriodo8"
+x9+x8+x6+x5>=31 "ElPersonalNecesarioParaElPeriodo9"
+x10+x9+x7+x6>=35 "ElPersonalNecesarioParaElPeriodo10"
+x11+x10+x8+x7>=30 "ElPersonalNecesarioParaElPeriodo11"
+x12+x11+x9+x8>=20 "ElPersonalNecesarioParaElPeriodo12"

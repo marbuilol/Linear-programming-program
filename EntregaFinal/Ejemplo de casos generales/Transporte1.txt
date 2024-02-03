@@ -1,0 +1,27 @@
+Problema_de_transporte_1
+
+Variables:
+x1 "F1_a_A1" 0 None "LpInteger"
+x2 "F1_a_A2" 0 None "LpInteger"
+x3 "F1_a_A3" 0 None "LpInteger"
+x4 "F1_a_A4" 0 None "LpInteger"
+x5 "F2_a_A1" 0 None "LpInteger"
+x6 "F2_a_A2" 0 None "LpInteger"
+x7 "F2_a_A3" 0 None "LpInteger"
+x8 "F2_a_A4" 0 None "LpInteger"
+x9 "F3_a_A1" 0 None "LpInteger"
+x10 "F3_a_A2" 0 None "LpInteger"
+x11 "F3_a_A3" 0 None "LpInteger"
+x12 "F3_a_A4" 0 None "LpInteger"
+
+Objetivo: 
+"LpMinimize" 4*x1+2*x2+3*x3+1*x4+3*x5+3*x6+5*x7+7*x8+5*x9+4*x10+7*x11+4*x12 "Coste_total_de_transportes"
+
+Restricciones:
+x1+x2+x3+x4<=7000000 "CapacidadFabricaF1"
+x5+x6+x7+x8<=11000000 "CapacidadFabricaF2"
+x9+x10+x11+x12<=15000000 "CapacidadFabricaF3"
+x1+x5+x9>=4000000 "CapacidadAlmacenA1"
+x2+x6+x10>=8000000 "CapacidadAlmacenA2"
+x3+x7+x11>=9000000 "CapacidadAlmacenA3"
+x4+x8+x12>=12000000 "CapacidadAlmacenA4"

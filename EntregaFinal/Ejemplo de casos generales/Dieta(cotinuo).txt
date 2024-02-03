@@ -1,0 +1,17 @@
+Problema_Dieta
+
+Variables:
+x1 "Grano_A" 0 None "LpContinuous"
+x2 "Grano_B" 0 None "LpContinuous"
+x3 "Grano_C" 0 None "LpContinuous"
+
+Objetivo: 
+"LpMinimize" 0.33*x1+0.47*x2+0.38*x3 "Coste_total_de_los_granos_usados: "
+
+Restricciones:
+x1+x2+x3==1 "SumaDeGranos"
+22*x1+28*x2+21*x3>=24 "RequisitoDeProteinas"
+16*x1+14*x2+25*x3>=16 "RequisitoDeHid.C"
+8*x1+7*x2+9*x3>=8 "RequisitoDeFósforo"
+5*x1+0*x2+6*x3>=3.4 "RequisitoDeMagnesio"
+

@@ -1,0 +1,29 @@
+Problema_Arbitraje
+
+Variables:
+x1 "A1_a_P1" 0 None "LpBinary"
+x2 "A1_a_P2" 0 None "LpBinary"
+x3 "A1_a_P3" 0 None "LpBinary"
+x4 "A2_a_P1" 0 None "LpBinary"
+x5 "A2_a_P2" 0 None "LpBinary"
+x6 "A2_a_P3" 0 None "LpBinary"
+x7 "A3_a_P1" 0 None "LpBinary"
+x8 "A3_a_P2" 0 None "LpBinary"
+x9 "A3_a_P3" 0 None "LpBinary"
+x10 "A4_a_P1" 0 None "LpBinary"
+x11 "A4_a_P2" 0 None "LpBinary"
+x12 "A4_a_P3" 0 None "LpBinary"
+
+Objetivo: 
+"LpMinimize" 5*x1+7*x2+7*x3+7*x4+5*x5+8*x6+6*x7+4*x8+8*x9+7*x10+6*x11+9*x12 "Distancia_recorrida"
+
+Restricciones:
+x1+x4+x7+x10==1 "SoloUnArbitroEnP1"
+x2+x5+x8+x11==1 "SoloUnArbitroEnP2"
+x3+x6+x9+x12==1 "SoloUnArbitroEnP3"
+
+
+
+
+
+
